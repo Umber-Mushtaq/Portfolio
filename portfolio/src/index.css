@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  /* Define color tokens with Tailwind syntax */
+  --color-background: rgb(var(--black-color));
+  --color-button: rgb(var(--yellow-color));
+  --color-foregrounddark: rgb(var(--dark-blue-color));
+  --color-text: rgb(var(--light-blue-color));
+  --color-foregroundlight: rgb(var(--blue-color));
+}
+
+/* Define your underlying CSS variables for flexibility */
+:root {
+  --black-color: 3 7 24;
+  --yellow-color: 250 204 22;
+  --dark-blue-color: 17 24 40;
+  --light-blue-color: 201 208 215;
+  --blue-color: 26 30 45;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #030718;
+}
+
+@keyframes floatY {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@utility animate-floatY {
+  animation: floatY 1s ease-in-out;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@utility animate-zoomIn {
+  animation: zoomIn 0.8s ease-out forwards;
+}
