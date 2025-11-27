@@ -1,5 +1,5 @@
 import HomeImage from "../assets/homeimg.png";
-import Resume from "../assets/Umber_Mushtaq_Resume.pdf";
+import Resume from "../assets/Umber_Mushtaq_CV.pdf";
 
 const Styles = {
   backStyle: "bg-foregrounddark py-5 px-10 mt-20",
