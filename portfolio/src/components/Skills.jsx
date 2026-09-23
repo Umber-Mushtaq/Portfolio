@@ -1,45 +1,60 @@
 import { SkillsData } from "./skillsdata";
-import Reactjs from "../assets/reactjs.png";
-
-const Styles = {
-  outgrid:
-    "grid grid-cols-1 md:grid-cols-2 gap-6 p-6 shadow-md shadow-text/50 rounded-lg",
-  ingrid: "grid grid-cols-2 md:grid-cols-3 gap-3 p-3",
-};
 
 const Skills = () => {
   return (
-    <section id='skills' className=' text-white px-5 mt-10'>
-      <h1 className='text-white font-bold tracking-wide text-3xl mb-6  text-center'>
-        Tech <span className='text-button'>Skills</span>
-      </h1>
-      <p className='text-text text-center'>
-        A summary of the languages, frameworks, and tools that form the
-        foundation of my development journey.
-      </p>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-10 p-10 md:mx-20'>
-        {SkillsData.map((group) => (
-          <div
-            key={group.category}
-            className='p-6 border-text rounded-2xl border-2'
-          >
-            <h1 className='text-center text-button text-2xl py-3'>
-              {group.category}
-            </h1>
+    <section
+      id='skills'
+      className='w-full bg-background py-20 px-4 sm:px-8 md:px-16 relative overflow-hidden text-white'
+    >
+      {/* Background ambient lighting blur */}
+      <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] sm:w-[600px] h-[350px] sm:h-[600px] bg-button/10 rounded-full blur-3xl pointer-events-none' />
 
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-              {group.items.map((item) => (
-                <div
-                  key={item.name}
-                  className='flex items-center justify-center overflow-hidden border-1 border-text py-3 px-2 rounded-full hover:animate-floatY'
-                >
-                  <img src={item.logo} className='w-10 h-10 object-center' />
-                  <h1 className='mx-2 text-1xl'>{item.name}</h1>
-                </div>
-              ))}
+      <div className='max-w-6xl mx-auto relative z-10'>
+        {/* Section Header */}
+        <div className='text-center space-y-3 mb-12 sm:mb-16'>
+          <h2 className='text-3xl md:text-5xl font-extrabold tracking-tight'>
+            Tech <span className='text-button'>Skills</span>
+          </h2>
+          <p className='text-text text-sm md:text-base max-w-xl mx-auto font-light'>
+            A comprehensive summary of the languages, databases, cloud tools,
+            and architectures that form the foundation of my engineering
+            journey.
+          </p>
+        </div>
+
+        {/* Category Grid Cards */}
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
+          {SkillsData.map((group) => (
+            <div
+              key={group.category}
+              className='p-6 sm:p-8 bg-[#161b22] border border-white/10 rounded-3xl shadow-xl hover:border-button/50 transition-colors'
+            >
+              <h3 className='text-center text-button text-xl sm:text-2xl font-bold mb-6 tracking-wide border-b border-white/10 pb-3'>
+                {group.category}
+              </h3>
+
+              <div className='grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4'>
+                {group.items.map((item, idx) => (
+                  <div
+                    key={idx}
+                    className='flex items-center gap-3 bg-[#1c2333] border border-white/10 py-3 px-3.5 rounded-xl hover:border-button hover:scale-[1.02] transition-all duration-300 shadow-sm'
+                  >
+                    {item.logo && (
+                      <img
+                        src={item.logo}
+                        alt={item.name}
+                        className='w-6 h-6 sm:w-7 sm:h-7 object-contain flex-shrink-0'
+                      />
+                    )}
+                    <span className='text-xs sm:text-sm font-medium text-white truncate'>
+                      {item.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

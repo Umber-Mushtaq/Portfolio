@@ -9,7 +9,6 @@ import Css from "../assets/css.png";
 import Csharp from "../assets/csharp.png";
 import Git from "../assets/git.png";
 import Github from "../assets/github.png";
-import gof from "../assets/gof.png";
 import vs from "../assets/vs.png";
 import sqlserver from "../assets/sqlserver.png";
 import sql from "../assets/sql.png";
@@ -25,39 +24,52 @@ export const SkillsData = [
     items: [
       { name: "HTML5", logo: Html },
       { name: "CSS3", logo: Css },
-      { name: "Material UI", logo: Materialui },
-      { name: "Tailwind CSS", logo: Tailwindcss },
-      { name: "React.js", logo: Reactjs },
       { name: "JavaScript", logo: Javascript },
+      { name: "React.js", logo: Reactjs },
+      { name: "Next.js", logo: Reactjs }, // Placeholder or your Next.js asset
+      { name: "Tailwind CSS", logo: Tailwindcss },
+      { name: "Material UI", logo: Materialui },
     ],
   },
   {
-    category: "Tools",
+    category: "Backend & APIs",
     items: [
-      { name: "VS Code", logo: vs },
-      { name: "Visual Studio", logo: Vscode },
-      { name: "Postman", logo: Postman },
-      { name: "Git", logo: Git },
-      { name: "MS SQL Server", logo: sqlserver },
-      { name: "GitHub", logo: Github },
-    ],
-  },
-  {
-    category: "Concepts",
-    items: [
-      { name: "OOP", logo: oop },
-      { name: "SOLID", logo: solid },
-      { name: "GOF Design Patterns", logo: gof },
-      { name: "EF Core", logo: efcore },
+      { name: "Node.js", logo: dotnet }, // Swap with your asset if available
+      { name: "Express.js", logo: dotnet },
+      { name: "C#", logo: Csharp },
+      { name: ".Net Web Api", logo: dotnet },
       { name: "RESTful API", logo: rest },
     ],
   },
   {
-    category: "Backend and Database",
+    category: "Databases & ODMs",
     items: [
-      { name: "C#", logo: Csharp },
-      { name: ".Net Web Api", logo: dotnet },
+      { name: "MongoDB", logo: sql },
+      { name: "Mongoose / ODM", logo: sql },
       { name: "MS SQL", logo: sql },
+      { name: "MS SQL Server", logo: sqlserver },
+      { name: "EF Core", logo: efcore },
+    ],
+  },
+  {
+    category: "Cloud, AI & DevOps",
+    items: [
+      { name: "Docker", logo: Github },
+      { name: "Azure / ACR", logo: Github },
+      { name: "AWS S3", logo: Github },
+      { name: "Google GenAI SDK", logo: Github },
+      { name: "Socket.IO", logo: rest },
+    ],
+  },
+  {
+    category: "Tools & Concepts",
+    items: [
+      { name: "VS Code", logo: vs },
+      { name: "Visual Studio", logo: Vscode },
+      { name: "Postman", logo: Postman },
+      { name: "Git & GitHub", logo: Git },
+      { name: "OOP", logo: oop },
+      { name: "SOLID", logo: solid },
     ],
   },
 ];
