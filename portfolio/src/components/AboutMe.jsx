@@ -98,7 +98,7 @@ const AboutMe = () => {
               <FaPhoneAlt className={Styles.infoIcon} />
               <div>
                 <span className={Styles.infoLabel}>Phone</span>
-                <span className={Styles.infoValue}>+92 349 8875900</span>
+                <span className={Styles.infoValue}>+92 3228073533</span>
               </div>
             </div>
           </div>

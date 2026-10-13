@@ -98,7 +98,7 @@ const Contact = () => {
             <button
               type='submit'
               disabled={loading}
-              className='w-full py-3.5 px-6 rounded-xl font-semibold text-white bg-button hover:opacity-90 active:scale-[0.99] transition-all duration-300 shadow-lg shadow-button/20 disabled:opacity-50 disabled:cursor-not-allowed'
+              className='w-full py-3.5 px-6 rounded-xl font-semibold text-black bg-button hover:opacity-90 active:scale-[0.99] transition-all duration-300 shadow-lg shadow-button/20 disabled:opacity-50 disabled:cursor-not-allowed'
             >
               {loading ? "Sending..." : "Send Message"}
             </button>

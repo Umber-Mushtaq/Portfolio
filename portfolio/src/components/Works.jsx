@@ -92,13 +92,13 @@ const Works = () => {
                 </span>
               </div>
 
-              <button
+              {/* <button
                 onClick={() => window.open(currentProject.github, "_blank")}
                 className='inline-flex items-center justify-center gap-2 text-xs font-mono text-black bg-button hover:bg-button/90 font-bold rounded-xl py-2 px-4 transition-all duration-300 shadow-md cursor-pointer self-start sm:self-auto'
               >
                 <FaGithub className='text-base' />
                 <span>Repository</span>
-              </button>
+              </button> */}
             </div>
 
             {/* Card Main Info */}
@@ -255,7 +255,7 @@ const Works = () => {
           </div>
 
           {/* Drawer Footer GitHub Action */}
-          <div className='pt-4 border-t border-slate-700'>
+          {/* <div className='pt-4 border-t border-slate-700'>
             <button
               onClick={() => window.open(currentProject.github, "_blank")}
               className='inline-flex items-center justify-center gap-2 text-xs font-mono text-black bg-button hover:bg-button/90 font-bold rounded-xl py-3 px-6 w-full transition-all shadow-md cursor-pointer'
@@ -263,7 +263,7 @@ const Works = () => {
               <FaGithub className='text-base' />
               <span>View Source Repository</span>
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

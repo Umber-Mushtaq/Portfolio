@@ -4,8 +4,8 @@ import { FaX, FaLinkedin, FaGithub } from "react-icons/fa6";
 
 const NavLinks = [
   { name: "Home", id: "home" },
-  { name: "About", id: "about" },
   { name: "Experience", id: "experience" },
+  { name: "About", id: "about" },
   { name: "Projects", id: "projects" },
   { name: "Skills", id: "skills" },
   { name: "Contact", id: "contact" },
@@ -36,8 +36,8 @@ const NavBar = () => {
 
   const sections = [
     "home",
-    "about",
     "experience",
+    "about",
     "projects",
     "skills",
     "contact",

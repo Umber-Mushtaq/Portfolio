@@ -14,8 +14,8 @@ const experiences = [
     type: "Work Experience",
     role: "Full-Stack Developer (Internship)",
     company: "Digifloat",
-    period: "June 2026 - August 2026",
-    status: "Completed 🚀",
+    period: "June 2026 - Dec 2026",
+    status: "Present 🚀",
     description:
       "Worked on enterprise-grade web applications including LawGPT, D2D, and VlogHub, handling full-stack feature development, cloud integrations, and secure API workflows.",
     tech: ["React.js", "Next.js", "Node.js", "Express", "MongoDB", "Azure"],
@@ -31,17 +31,7 @@ const experiences = [
       "Completed rigorous hands-on MERN stack training. Built a comprehensive role-based Wedding Planner marketplace application featuring booking workflows and cloud storage.",
     tech: ["React.js", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
   },
-  {
-    id: "university",
-    type: "University Project",
-    role: "Lead Full-Stack Developer",
-    company: "University Final Year Project / Capstone",
-    period: "2024",
-    status: "Major Milestone 🎓",
-    description:
-      "Architected and developed a full-stack enterprise web application with secure authentication, role-based access control, real-time tracking, and automated reporting systems.",
-    tech: ["React.js", "Node.js", "ASP.NET Core", "SQL Server / MongoDB"],
-  },
+
   {
     id: "codealpha",
     type: "Work Experience",
@@ -52,6 +42,17 @@ const experiences = [
     description:
       "Developed full-stack web applications including an authenticated Blog App with category filtering and a Project Management System featuring Kanban task boards.",
     tech: ["React", "Node.js", "Express", "MongoDB", "Socket.IO"],
+  },
+  {
+    id: "university",
+    type: "University Project",
+    role: "Lead Full-Stack Developer",
+    company: "University Final Year Project / Capstone",
+    period: "2024",
+    status: "Major Milestone 🎓",
+    description:
+      "Architected and developed a full-stack enterprise web application with secure authentication, role-based access control, real-time tracking, and automated reporting systems.",
+    tech: ["React.js", "Node.js", "ASP.NET Core", "SQL Server / MongoDB"],
   },
 ];
 

@@ -4,7 +4,6 @@ import {
   FaGraduationCap,
   FaGithub,
   FaLinkedin,
-  FaTwitter,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
@@ -47,11 +46,11 @@ const Footer = () => {
             </a>
 
             <a
-              href='tel:+923498875900'
+              href='tel:+923228073533'
               className='flex items-center gap-3 bg-[#1c2333] border border-white/10 py-3 px-4 rounded-xl hover:border-button hover:text-white transition-all duration-300'
             >
               <BiPhone className='text-button text-xl flex-shrink-0' />
-              <span>+92 3498875900</span>
+              <span>+92 3228073533</span>
             </a>
 
             <div className='flex items-center gap-3 bg-[#1c2333] border border-white/10 py-3 px-4 rounded-xl text-text'>
@@ -68,7 +67,7 @@ const Footer = () => {
           </p>
           <div className='flex items-center space-x-6'>
             <a
-              href='https://github.com'
+              href='https://github.com/Umber-Mushtaq'
               target='_blank'
               rel='noreferrer'
               className='hover:text-button transition-colors'
@@ -76,20 +75,12 @@ const Footer = () => {
               <FaGithub className='text-lg' />
             </a>
             <a
-              href='https://linkedin.com'
+              href='https://www.linkedin.com/in/umber-mushtaq/'
               target='_blank'
               rel='noreferrer'
               className='hover:text-button transition-colors'
             >
               <FaLinkedin className='text-lg' />
-            </a>
-            <a
-              href='https://twitter.com'
-              target='_blank'
-              rel='noreferrer'
-              className='hover:text-button transition-colors'
-            >
-              <FaTwitter className='text-lg' />
             </a>
           </div>
         </div>

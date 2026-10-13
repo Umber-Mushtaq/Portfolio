@@ -79,7 +79,7 @@ const Home = () => {
               <div className={Styles.dotYellow} />
               <div className={Styles.dotGreen} />
               <span className={Styles.terminalTitle}>
-                umber-mushtaq-profile.tsx
+                umber-mushtaq-profile.ts
               </span>
             </div>
 
